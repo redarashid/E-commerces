@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+
+    <!-- File CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/login-register.css">
+
+
+    <!-- Font Awsome -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+<body>
+    <header>
+        <div class="container top_nav">
+            <a href="index.html" class="logo"><img src="img/logo-black.png" alt=""></a>
+            <form action="" class="search">
+                <input type="text" placeholder="Search for proudects...">
+                <button type="submit">Search</button>
+            </form>
+
+            <div class="cart_header">
+                <div onclick="open_cart()" class="icon_cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="count_items">0</span>
+                </div>
+                <div class="total_price">
+                    <p>My Cart:</p>
+                    <p class="price-cart-head">$0</p>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <div class="links container">
+                <i onclick="open_menu()" class="fa-solid fa-bars btn_open_menu"></i>
+
+                <ul id="menu">
+                    <span onclick="close_menu()" class="bg_overlay"></span>
+                    <i onclick="close_menu()" class="fa-solid fa-xmark btn_close_menu"></i>
+                    <img class="logo_menu" src="img/logo-black.png" alt="">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="all_proudects.html">ALL PROUDECTS</a></li>
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+                <div class="login_singup">
+                    <a href="singup.html">singup <i class="fa-solid fa-user-plus"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="cart">
+        <div class="top_cart">
+            <h3>My Cart:<span class="count_item_cart">(0item in cart)</span></h3>
+            <span onclick="close_cart()" class="close_cart"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+
+        <div class="item_in_cart">
+
+        </div>
+
+        <div class="bottom_cart">
+            <div class="total">
+                <p>Cart Subtotal</p>
+                <p class="price">$0</p>
+            </div>
+        </div>
+
+        <div class="button_cart">
+            <a href="cheek_out.html" class="btn_cart">PROCEED TO CHEEKOUT</a>
+            <button onclick="close_cart()" class="btn_cart trans_bg">Shop More</button>
+        </div>
+    </div>
+
+    <section class="login sec_form">
+
+        <div class="form_container">
+            <p class="title">Welcome back</p>
+
+            <form action="" class="form">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <p class="page_link">
+                    <a href="http://" class="page_link_lable">Forget Password?</a>
+                </p>
+
+                <button class="btn_form">Login</button>
+            </form>
+
+            <p class="sing_up_lable">
+                Don't have an account? <a href="http://" class="sing_up_link">Sing_Up</a>
+            </p>
+
+
+            <div class="buttons_container">
+                
+                <div class="apple_login">
+                    <i class="fa-brands fa-apple"></i>
+                    <span>Login With Apple</span>
+                </div>
+
+                <div class="google_login">
+                    <i class="fa-brands fa-google"></i> 
+                    <span>Login With Google</span>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+
+            <div class="big_row">
+
+                <img src="img/logo-white.png" alt="">
+                <div class="hotline">
+                    <i class="fa-solid fa-headset"></i>
+                    <div class="text">
+                        <h5>Hotline Free 24/24:</h5>
+                        <h6>(+100)123 456 7890</h6>
+                    </div>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet Beatae odio doloremque nam quod assumenda dignissimos vitae illum, ratione provident </p>
+            </div>
+
+            <div class="row">
+                <h4>FAQs & Help</h4>
+
+
+                <div class="links">
+
+                    <a href="http://">FAQ'S</a>
+                    <a href="http://">Ordaring Teacking</a>
+                    <a href="http://">Contacts</a>
+                    <a href="http://">Events</a>
+                    <a href="http://">Help Center</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <h4>Shipping & Delivery</h4>
+
+
+                <div class="links">
+
+                    <a href="http://">Delivery Information</a>
+                    <a href="http://">Discount</a>
+                    <a href="http://">Payment $ Shipping</a>
+                    <a href="http://">Estimatend Delivery Time</a>
+                    <a href="http://">Shipping Guide</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <h4>Information</h4>
+
+
+                <div class="links">
+
+                    <a href="http://">Popular</a>
+                    <a href="http://">Our Services</a>
+                    <a href="http://">Your Acount</a>
+                    <a href="http://">Privacy Policy</a>
+                    <a href="http://">Terms & Condition</a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="bottom_footer">
+            <div class="container">
+                <p>Copyright &copy; <span>Topic.</span> all rights reserved</p>
+
+                <div class="payment_img">
+                    <img src="img/payment-1.png" alt="">
+                    <img src="img/payment-2.png" alt="">
+                    <img src="img/payment-3.png" alt="">
+                    <img src="img/payment-4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/swiper.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/items_home.js"></script>
+
+
+</body>
+</html>
